@@ -59,6 +59,7 @@ class Adopter(object):
         return adoption_center.get_number_of_species(self.desired_species)
 
     def get_score_other(self, adoption_center, other):
+        # type: (object, string) -> integer
         return adoption_center.get_number_of_species(other)
 
     _get_score = get_score
